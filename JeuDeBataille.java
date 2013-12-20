@@ -58,14 +58,14 @@ public class JeuDeBataille {
             raoul.gagne(pioche);
         }
 
-        if (carteDeToto.estPlusForteQue(carteDeRaoul)) {
+        else if (carteDeToto.estPlusForteQue(carteDeRaoul)) {
             toto.gagne(carteDeRaoul);
             raoul.perdre(carteDeRaoul);
             toto.mettreEnDessous(carteDeToto);
             toto.gagne(pioche);
         }
 
-        if (carteDeToto.estEgaleA(carteDeRaoul)) {
+        else {
             System.out.println("Bataille!!!");
 
             toto.parierUneCarte(carteDeToto, pioche);
@@ -79,3 +79,4 @@ public class JeuDeBataille {
         System.out.println("Raoul : " + raoul.nombreDeCartes() + " / " + "Toto : " + toto.nombreDeCartes() + " : " + (raoul.nombreDeCartes() + toto.nombreDeCartes()) + "\n");
     }
 }
+
