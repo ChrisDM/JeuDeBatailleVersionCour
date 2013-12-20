@@ -12,13 +12,8 @@ public class Carte {
         return puissance > unAutreCarte.puissance;
     }
 
-    public boolean estEgaleA(Carte unAutreCarte){
-        return puissance == unAutreCarte.puissance;
-    }
-
     public String getTitre() {
         return titre;
     }
-
 
 }
